@@ -1,0 +1,16 @@
+n = input("Enter integers in the list separated by a space: ")
+list1 = n.split()
+for i in range(0,len(list1)):
+    list1[i] = int(list1[i])  
+list2 = []
+for i in list1:
+    if (i%5 != 0):
+        list2.append(i)
+    else:
+        continue
+if(list2 == []):
+    print("All the integers of the list are multiples of 5")
+else:
+    print("Integers which are not multiples of 5 are:",end=" ")
+    for i in list2:
+        print(i,end=" ")
