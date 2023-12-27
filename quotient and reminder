@@ -1,0 +1,6 @@
+#Program to illustrate divmod() function
+num1 = int(input("Enter number-1: "))
+num2 = int(input("Enter number-2: "))
+x, y = divmod(num1, num2)
+print(num1, '//', num2, '=', x)
+print(num1, '%', num2, '=', y)
